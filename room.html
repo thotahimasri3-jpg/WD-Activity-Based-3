@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+
+<header>
+    <h1>TravelGo</h1>
+    <nav>
+        <a href="#booking">Book Tickets</a>
+        <a href="#services">Services</a>
+        <a href="#seats">Select Seats</a>
+    </nav>
+</header>
+<div class="container">
+    <h2>Book Your Journey</h2>
+    <form id="booking">
+
+        <div class="form-box">
+            <label>From:</label>
+            <input type="text" placeholder="Enter source city" required>
+            <label>To:</label>
+            <input type="text" placeholder="Enter destination city" required>
+            <label>Travel Date:</label>
+            <input type="date" required>
+            <label>Transport Type:</label>
+            <select required>
+                <option value="">Select Transport</option>
+                <option>Bus</option>
+                <option>Train</option>
+            </select>
+            <label>Number of Passengers:</label>
+            <input type="number" min="1" max="6" value="1">
+            <button type="button">Search Tickets</button>
+        </div>
+
+        <h2>Passenger Details</h2>
+        <div class="form-box">
+            <label>Passenger Name:</label>
+            <input type="text" placeholder="Enter your name">
+            <label>Age:</label>
+            <input type="number" placeholder="Enter age">
+            <label>Gender:</label>
+            <select>
+                <option>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+            <label>Mobile Number:</label>
+            <input type="tel" placeholder="Enter mobile number">
+        </div>
+
+    </form>
+    <section id="services">
+        <h2>Available Services</h2>
+        <div class="service-grid">
+            <div class="card">
+                <h3>Express Bus</h3>
+                <p>Departure: 08:00 AM</p>
+                <p>Arrival: 02:00 PM</p>
+                <p>Fare: ₹600</p>
+                <button type="button">Select Bus</button>
+            </div>
+            <div class="card">
+                <h3>Luxury Bus</h3>
+                <p>Departure: 10:00 AM</p>
+                <p>Arrival: 04:00 PM</p>
+                <p>Fare: ₹900</p>
+                <button type="button">Select Bus</button>
+            </div>
+            <div class="card">
+                <h3>Express Train</h3>
+                <p>Departure: 06:00 AM</p>
+                <p>Arrival: 12:00 PM</p>
+                <p>Fare: ₹450</p>
+                <button type="button">Select Train</button>
+            </div>
+        </div>
+    </section>
+    <h2>Ticket Fare Details</h2>
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Type</th>
+            <th>Fare</th>
+        </tr>
+        <tr>
+            <td>Express Bus</td>
+            <td>Bus</td>
+            <td>₹600</td>
+        </tr>
+        <tr>
+            <td>Luxury Bus</td>
+            <td>Bus</td>
+            <td>₹900</td>
+        </tr>
+        <tr>
+            <td>Express Train</td>
+            <td>Train</td>
+            <td>₹450</td>
+        </tr>
+    </table>
+    <section id="seats">
+        <h2>Select Your Seat</h2>
+        <div class="seat-box">
+            <p>Available Seats</p>
+            <div class="seats">
+                <label><input type="checkbox"> 1</label>
+                <label><input type="checkbox"> 2</label>
+                <label><input type="checkbox"> 3</label>
+                <label><input type="checkbox"> 4</label>
+                <label><input type="checkbox"> 5</label>
+                <label><input type="checkbox"> 6</label>
+                <label><input type="checkbox"> 7</label>
+                <label><input type="checkbox"> 8</label>
+            </div>
+
+            <button type="button">Confirm Booking</button>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 TravelGo | Safe Journey, Happy Journey!</p>
+</footer>
+
+</body>
+</html>
+
